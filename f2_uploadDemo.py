@@ -13,7 +13,7 @@ def tar_task():
 def put_task():
     run('mkdir -p /home/songpengpeng/testDemo')
     with cd('/home/songpengpeng/testDemo'):
-         put('/home/songpengpeng/testDemo/demo.tar.gz')
+         put('/home/songpengpeng/testDemo/demo.tar.gz','/home/songpengpeng/testDemo/demo.tar.gz')
 
 @task
 def check_task():
