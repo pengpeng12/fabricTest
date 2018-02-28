@@ -6,7 +6,7 @@ env.password = '123'
 @task
 @runs_once
 def tar_task():
-    with lcd('/home/songpengpeng/tusiji'):
+    with lcd('/home/songpengpeng/testDemo'):
          local('tar zcvf demo.tar.gz demo.py')
 
 @task
