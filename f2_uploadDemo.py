@@ -18,7 +18,7 @@ def put_task():
 @task
 def check_task():
     lmd5 = local('md5sum /home/songpengpeng/testDemo/demo.tar.gz', capture=True).split(' ')[0]
-    rmd5 = run('md5sum /home/songpengpeng/testDemo/demo.tar.gz').split('')[0]
+    rmd5 = run('md5sum /home/songpengpeng/testDemo/demo.tar.gz').split(' ')[0]
     if lmd5 == rmd5:
         print('OK !')
     else:
