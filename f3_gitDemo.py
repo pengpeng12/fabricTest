@@ -17,7 +17,7 @@ def local_update():
 @task
 def remote_update():
     with cd("/home/songpengpeng/tusiji"):
-        run("git checkout master")
+        run("git add -A")
         run("git pull origin master")
 
 @task
